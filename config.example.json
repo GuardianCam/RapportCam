@@ -1,0 +1,22 @@
+{
+  "telegram": {
+    "bot_token": "ICI LE TOKENDE_BOTFATHER",
+    "chat_id": "ICI CHAT  ID"
+  },
+  "cameras": [
+    { "name": "Entrée", "host": "192.168.1.101", "port": 554 },
+    { "name": "Jardin", "host": "192.168.1.102", "port": 554 },
+    { "name": "Garage", "host": "192.168.1.103", "port": 554 }
+  ],
+  "disks": [
+    { "name": "Disque NVR", "path": "/mnt/nvr" },
+    { "name": "Système", "path": "/" }
+  ],
+  "disk_warn_percent": 85,
+  "events": {
+    "recordings_path": "/mnt/nvr/recordings",
+    "extensions": [".mp4", ".mkv", ".jpg"],
+    "night_start": "22:00",
+    "night_end": "07:00"
+  }
+}

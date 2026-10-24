@@ -1,0 +1,5 @@
+# Ne jamais publier tes vrais identifiants / adresses IP
+config.json
+.env
+__pycache__/
+*.log
