@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Rapport sécurité quotidien 
 
+
 Usage:
     report.py                # silencieux, écrit dans report.log
-    report.py --dry-run      # affiche seulement
-    report.py --notify       # envoie aussi sur Telegram
+    report.py --dry-run      # affiche seulement et 
+    report.py --notify       # envoie l alrt  aussi sur Telegram
     report.py --quiet        # aucune sortie fichier ni console
 """
 import argparse, json, os, shutil, socket, sys, urllib.parse, urllib.request
@@ -48,7 +49,7 @@ def night_window(s, e, now=None):
     if start >= end: start -= timedelta(days=1)
     return start, end
 
-def count_events(cfg, start, end):
+def count_events(cfg, start , end):
     root = Path(cfg["recordings_path"])
     exts = {x.lower() for x in cfg.get("extensions", [".mp4", ".mkv", ".jpg"])}
     if not root.exists(): return None
